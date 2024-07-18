@@ -1,0 +1,70 @@
+.card{
+    border:1px solid #000000;
+    width:310px;
+    height:220px;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 15px;
+}
+.start-btn{
+    width:60px;
+    height:30px;
+    border: none;
+    background: #5999ff;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    margin-top: 10px;
+}
+.card:hover{
+    transform: scale(1.01);
+    transition:0.3s;
+    background-color: #e6ffd9;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    .start-btn{
+        border: 1px solid black;
+        border: none;
+    }
+}
+.image-class{
+    width:100px;
+}
+.link-class{
+    text-decoration: none;
+    color: #ffffff;
+}
+.card-container{
+    margin: 0px;
+    padding: 0px;
+}
+@media screen and (max-width:480px) {
+    .card{
+        width: 150px;
+        height: 130px;
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 5px;
+        margin-top: 0px;
+    }
+    .card h3{
+        font-size: 8px;
+    }
+    .card .image-class{
+        width: 40px;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    .link-class{
+        font-size: 10px;
+    }
+    .start-btn{
+        width: 50px;
+        height: 20px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 7px;
+    }
+}
